@@ -14,7 +14,7 @@ user_prompt = True
 while user_prompt:
     age = input("please enter your age")
     if age.isdigit():
-        user_promt = False
+        user_prompt = False
     else:
         print("Please enter your age in digits only")
 print(f"your age is {age}")

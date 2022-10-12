@@ -12,6 +12,18 @@ for number in list_data:
 # using control flow - if elif - else and for loop print all the keys
 # print key with matching value
 
+student_data = {
+    "name" : "Adam",
+    "surname" : "Hamdi",
+    "age" : "22"
+}
+for name in student_data:
+    print(name)
+
+for name in student_data.values():
+    if name == "Adam":
+        print(student_data.keys())
+
 
 
 
