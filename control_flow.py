@@ -21,17 +21,25 @@
 
 # age restriction for movie tickets
 age = int(input("Please enter your age:"))
-# create a condition for 18 and above
-if age >= 18:
-    print("You are allowed to watch the 18+ movie")
-elif age >= 16:
-    print("You are alllowed to watch thr 16+ movie")
-elif age >= 12:
-    print("You are allowed to watch the 12+ movie")
-elif age >= 15:
-    print("You are allowed to watch the 12+ movie")
-elif age >= 117:
-    print("You have to be under 117 years old")
+
+def movie_rating(age):
+   if age > 117:
+       print("You have to be under 117 years old")
+   elif age >= 18:
+       print("You are allowed to watch the 18+ movie")
+   elif age >= 16:
+       print("You are alllowed to watch thr 16+ movie")
+   elif age >= 12:
+       print("You are allowed to watch the 12+ movie")
+   elif age >= 15:
+       print("You are allowed to watch the 12+ movie")
+   else:
+       print("Error, try again")
+
+   return  f"Your age is {age}"
+print(movie_rating((age)))
+
+
 # 16 and above
 # if age >= "16":
 #pg
